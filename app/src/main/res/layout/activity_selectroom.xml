@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp">
+
+            <TableRow
+                android:background="#ffffff"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Room No"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Availability"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Floor"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="332dp"
+            android:layout_height="600dp"
+            android:textSize="17dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_error_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHomeBack"
+                android:layout_width="80dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#00DF77"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/btnBookSearch"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00DF77"
+                android:layout_marginRight="10dp"
+                android:text="Booking Search" />
+
+
+
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="105dp"
+                android:backgroundTint="#00DF77"
+                android:layout_height="wrap_content"
+                android:text="Booking" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

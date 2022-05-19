@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_rules_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_rules_2"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="116dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Rules and Regulations"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="309dp"
+                android:layout_height="646dp"
+                android:text="◼ Reservations for study rooms can be made for two to five hours only.\n\n◼ In a group least have five students.\n\n◼ You need to provide student ID for the library staff.\n\n◼ No food or drinks allowed in the study rooms, expect water bottle.\n\n◼ Keep noise to a minimum so as not disturb others.\n\n◼ You must arrive at the study room within 15 minutes before booked time"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rules_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="147dp"
+                android:backgroundTint="#00DF77"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnAgree"
+                android:layout_width="147dp"
+                android:backgroundTint="#00DF77"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Agree" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

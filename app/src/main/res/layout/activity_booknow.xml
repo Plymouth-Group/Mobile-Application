@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_arrange_0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lblRoomNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room No  : "
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRoomNo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="R000"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblArrangeTime"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Arrange Time"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_arrange"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/txtStartArrangeTime"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/lblArrangeTimeTo"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtEndArrangeTime"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblAddStudentTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_add_student"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lblAddStudent"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Student ID"
+                android:textAlignment="inherit"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/txtStudentID"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_add_student_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lblAddStudent_2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/txtStudentName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_add_stu_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnStudentClear"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00DF77"
+                android:layout_marginRight="20dp"
+                android:text="Clear" />
+
+            <Button
+                android:id="@+id/btnStudentAdd"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#00DF77"
+                android:text="Add" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblMembers"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Members"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tblBookNow"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TableRow
+                android:background="#CFCFCF"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Student ID"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Student Name"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00DF77"
+            android:text="Book Now" />
+
+    </LinearLayout>
+</LinearLayout>

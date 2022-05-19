@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/homeTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-170dp"
+            android:text="Study Room Booking"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnStudyRoomBook"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#00DF77"
+            android:text="Study Room Booking" />
+
+        <Button
+            android:id="@+id/btnNews"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00DF77"
+            android:text="News" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00DF77"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00DF77"
+            android:text="Info" />
+
+
+    </LinearLayout>
+</LinearLayout>
